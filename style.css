@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p {
+    padding: 20px;
+    font-size: 25px;
+}
+#opening {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    font-size: 50px;
+    color: white;
+}
+table {
+    display: none;
+}
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table td {
+    width: 100px;
+    height: 100px;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+}
+td.wrong {
+    background-color: red !important;
+}
+td.right {
+    background-color: green;
+    pointer-events: none;
+}
