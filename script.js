@@ -76,10 +76,10 @@ function check(td) {
                 td.classList.remove("wrong");
                 alert(`Oops, wrong one! You have ${chances} chances left`);
             }, 200);
+            chances--;
         } else {
             gameOver("You lost");
         }
-        chances--;
     }
 }
 
@@ -88,8 +88,8 @@ function tikTak() {
         time--;
         seconds.innerHTML = time > 9 ? time : "0"+time;
     } else {
-        gameOver("Time is up");
         clearInterval(timer);
+        gameOver("Time is up");
     }
 }
 
